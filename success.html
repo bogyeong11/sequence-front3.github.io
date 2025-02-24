@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 찾기 완료</title>
+
+    <!-- 구글 폰트: Playfair Display 적용 -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 🔴 네비게이션 바 -->
+    <header>
+        <div class="nav-container">
+            <div class="logo-button">
+                <img src="images/sequence.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Announcement</a></li>
+                    <li><a href="#">Archive</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="login-button">Log In</a>
+        </div>
+    </header>
+
+    <!-- 🔴 비밀번호 찾기 완료 섹션 -->
+    <section class="password-recovery-complete">
+        <h1>비밀번호 찾기</h1>
+        <p>회원 이메일로 임시 비밀번호가 발급되었습니다.</p>
+
+        <!-- 이메일 박스 -->
+        <div class="email-box" id="user-email-box">이메일 정보를 불러오는 중...</div>
+
+        <!-- 버튼 -->
+        <button id="login-btn" class="primary-btn">로그인</button>
+        <button id="find-id-btn" class="secondary-btn">아이디 찾기 →</button>
+    </section>
+
+    <!-- JavaScript 연결 -->
+    <script src="complete.js"></script>
+</body>
+</html>

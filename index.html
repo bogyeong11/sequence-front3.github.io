@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence Clone</title>
+
+    <!-- 구글 폰트: Playfair Display 적용 -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+ <!-- 🔴 네비게이션 바 -->
+ <header>
+    <div class="nav-container">
+      <div class="logo-button">
+        <img src="images/sequence.png" alt="Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Project</a></li>
+          <li><a href="#">Announcement</a></li>
+          <li><a href="#">Archive</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="login-button">Log In</a>
+    </div>
+  </header>
+
+<!-- 🔴 비밀번호 찾기 섹션 -->
+<section class="password-recovery">
+    <h1>비밀번호 찾기</h1>
+    <p>가입 시 입력된 이메일로 임시 비밀번호가 발급됩니다.</p>
+    
+    <div class="recovery-form">
+      <div class="form-group">
+        <label for="user-id">아이디</label>
+        <input type="text" id="user-id" placeholder="아이디를 입력해주세요.">
+      </div>
+      <div class="form-group">
+        <label for="user-email">이메일</label>
+        <input type="email" id="user-email" placeholder="이메일을 입력해주세요.">
+      </div>
+    </div>
+
+    <!-- 에러/성공 메시지 영역 -->
+    <div id="error-message" class="error-message" style="display: none;"></div>
+
+    <!-- 임시 비밀번호 발급 버튼 -->
+    <button id="recovery-button" class="recovery-button" disabled>임시 비밀번호 발급</button>
+</section>
+
+<!-- JavaScript 연결 -->
+<script src="app.js"></script>
+
+</body>
+</html>
