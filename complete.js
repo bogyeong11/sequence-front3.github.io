@@ -1,4 +1,3 @@
-// ✅ 이메일 정보 가져오기 (localhost:3000에서 요청)
 document.addEventListener('DOMContentLoaded', async () => {
     const params = new URLSearchParams(window.location.search);
     const userId = params.get('userId');  // URL에서 userId 가져오기
@@ -23,7 +22,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         emailBox.textContent = '이메일 정보를 가져오는 데 실패했습니다.';
     }
 
-    // ✅ 로그인 버튼 이벤트
     const loginButton = document.getElementById('login-btn');
     if (loginButton) {
         loginButton.addEventListener('click', () => {
@@ -33,7 +31,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error('로그인 버튼을 찾을 수 없습니다.');
     }
 
-    // ✅ 아이디 찾기 버튼 이벤트
     const findIdButton = document.getElementById('find-id-btn');
     if (findIdButton) {
         findIdButton.addEventListener('click', () => {
@@ -44,7 +41,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-// 메시지 표시 함수
 function showMessage(msg, color) {
     const emailBox = document.getElementById('user-email-box');
     emailBox.textContent = msg;
