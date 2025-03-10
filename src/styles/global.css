@@ -1,0 +1,495 @@
+/* 🔴 전체 기본 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* 배경 검정 */
+    color: white;
+}
+
+/* 🔴 네비게이션 바 스타일 (기존 유지) */
+header {
+    width: 100%;
+    height: 100px;
+    background: #151515;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-container {
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    max-width: 1915px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.logo-button img {
+    height: 44px;
+}
+
+.login-button1 {
+    border: 1px solid red;
+    padding: 5px 15px;
+    color: red;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.login-button1:hover {
+    background: red;
+    color: white;
+}
+
+
+
+/* 🔴 회원가입 스타일 */
+.signup-container {
+    margin-top: 120px; /* 네비게이션 아래 여백 */
+    text-align: center;
+    padding: 50px;
+}
+
+.signup-container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.signup-container h2 {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.signup-form {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #555;
+    color: white;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-bottom: 2px solid red;
+}
+
+.form-group select {
+    appearance: none;
+}
+
+/* 🔴 로그인 페이지 스타일 */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+}
+
+.auth-container {
+    text-align: center;
+    width: 400px;
+}
+
+.login-logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.auth-container h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #222;
+    border: 1px solid #333;
+    color: white;
+    text-align: center;
+}
+
+.form-group input::placeholder {
+    color: #777;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.login-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid red;
+    background: none;
+    color: red;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background-color: red;
+    color: white;
+}
+
+.arrow-icon {
+    margin-left: 10px;
+}
+
+
+/* 제출 버튼 */
+.signup-button {
+    width: 150%;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'SUIT', sans-serif;
+}
+
+.signup-button:hover {
+    background-color: darkred;
+}
+
+.profile-section,
+.education-section {
+  margin-bottom: 30px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-upload-box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed red;
+    cursor: pointer;
+    background-color: #151515;
+}
+
+.upload-icon {
+    font-size: 24px;
+    color: red;
+}
+
+.nickname-section {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.duplicate-check {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.education-section {
+    margin-bottom: 30px;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.education-field {
+    flex: 1;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.skill-container, .desired-job-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-button, .desired-job-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill-button.selected, .desired-job-button.selected {
+    background-color: red;
+    color: white;
+}
+
+/* 🔴 추가 버튼 스타일 */
+.add-button {
+    width: 35px;
+    height: 35px;
+    font-size: 24px;
+    color: red;
+    border: 2px solid red;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button:hover {
+    background: red;
+    color: white;
+}
+
+/* 🔴 입력 필드 스타일 */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background: #000;
+    border: none;
+    border-bottom: 2px solid #555;
+    color: white;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-bottom: 2px solid red;
+}
+
+/* 🔴 경험 및 활동, 경력, 자격 섹션 */
+.experience-container, .career-container, .award-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid #555;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* 🔴 포트폴리오 스타일 */
+.portfolio-section {
+    margin-top: 40px;
+}
+
+.portfolio-section label {
+    display: block;
+    padding: 15px;
+    background: #222;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.portfolio-section label:hover {
+    background: red;
+}
+
+/* 🔴 자기소개 입력 */
+.introduction-section {
+    margin-top: 30px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+}
+
+.char-count {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: #bbb;
+    margin-top: 5px;
+}
+
+
+.signup-button, .auth-button {
+    width: 100%;
+    padding: 15px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.signup-button:hover, .auth-button:hover {
+    background: darkred;
+}
+
+
+/* 닉네임 입력 그룹 */
+.nickname-group {
+    margin-bottom: 20px;
+  }
+  
+  .nickname-input-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .nickname-input-container input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #222;
+    border: 1px solid #333;
+    color: white;
+  }
+  
+  .duplicate-check {
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .duplicate-check:hover {
+    background-color: darkred;
+  }
+  
+  /* 닉네임 중복확인 메시지 */
+  .nickname-message {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .nickname-message.success {
+    color: lightgreen;
+  }
+  
+  .nickname-message.error {
+    color: red;
+  }
+  
